@@ -20,7 +20,7 @@ properties ([
 
 /* Declarative */
 pipeline {
-    agent {lable 'ubuntu'}
+    agent {label 'ubuntu'}
     stages {
         stage ('example'){
             steps {
