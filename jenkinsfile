@@ -4,12 +4,12 @@ properties ([
             name: "host_name",
             defaultValue: "",
             description: "name of the server"
-        )
+        ),
         strinfParam (
             name: "user_name",
             defaultValue: "",
             description: "name of the user"
-        )
+        ),
         stringParam (
             name: "password",
             defaultValue: "",
