@@ -21,8 +21,8 @@ properties ([
 /* Declarative */
 pipeline {
     agent {lable 'ubuntu'}
-    stages (example) {
-        stage {
+    stages {
+        stage ('example'){
             steps {
                 echo "print host name: ${params.host_name}"
                 echo "print uesr name: ${params.user_name}"
