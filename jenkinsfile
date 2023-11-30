@@ -24,7 +24,9 @@ pipeline {
     stages (example) {
         stage {
             steps {
-                echo "print uesr name: ${params.host_name}"
+                echo "print host name: ${params.host_name}"
+                echo "print uesr name: ${params.user_name}"
+                echo "print uesr pass: ${params.password}"
             }
         }
     }
