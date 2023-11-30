@@ -5,7 +5,7 @@ properties ([
             defaultValue: "",
             description: "name of the server"
         ),
-        strinfParam (
+        stringParam (
             name: "user_name",
             defaultValue: "",
             description: "name of the user"
