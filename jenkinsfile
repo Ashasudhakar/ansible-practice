@@ -1,0 +1,31 @@
+properties ([
+    parameters ([
+        stringParam (
+            name: "host_name",
+            defaultValue: "",
+            description: "name of the server"
+        )
+        strinfParam (
+            name: "user_name",
+            defaultValue: "",
+            description: "name of the user"
+        )
+        stringParam (
+            name: "password",
+            defaultValue: "",
+            description: "password of the user"
+        )
+    ])
+])
+
+## Declarative
+pipeline {
+    agent any 
+    stages (example) {
+        stage {
+            steps {
+                echo "print uesr name: ${params.host_name}"
+            }
+        }
+    }
+}
