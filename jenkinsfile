@@ -18,7 +18,7 @@ properties ([
     ])
 ])
 
-## Declarative
+/* Declarative */
 pipeline {
     agent {lable 'ubuntu'}
     stages (example) {
